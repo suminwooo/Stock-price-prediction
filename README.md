@@ -10,7 +10,7 @@ data from yahoo finance.
   
   --------
   
-  Using kospi 200 data  
+  < Using kospi 200 data >  
   
 1. Kospi 200 close price prediction using OHLC (LSTM)  
 -> using 5day data and prediction 10 days later  
@@ -25,7 +25,7 @@ data from yahoo finance.
   
   ---------
    
-  Using Samsung stock price data   
+  < Using Samsung stock price data >  
   
   
 3. samsung stock price prediction LSTM  
@@ -51,3 +51,4 @@ data from yahoo finance.
 -> PCA를 활용하여 4개의 변수를 활용하여 LSTM을 돌려봄  
 -> RMSE : 0.13191855162665575  
 -> 문제점 : 3번,4번을 비교하면 PCA한 모델이 RMSE가 더 작게 나오지만 지금의 상황에서는 PCA하지 않았을때가 작게 나타남.   
+-> 향후 계획 : close 추가
