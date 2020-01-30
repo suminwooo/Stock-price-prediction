@@ -5,7 +5,8 @@ I used LSTM, GRU with korea stock, index.
 data from yahoo finance.
 
 
-00. Technical analysis code(bollinger band, ma, macd, rsi, stochastic)
+00. Technical analysis code(bollinger band, ma, macd, rsi, stochastic)  
+
 1. Kospi 200 close price prediction using OHLC (LSTM)
 -> using 5day data and prediction 10 days later
 -> RMSE : 0.02553430596902424
