@@ -74,6 +74,16 @@ data from yahoo finance.
 -> 모델을 LSTM뿐만이 아닌 GRU도 추가하고 epoch, batch size를 설정하면서 튜닝이 필요할것 같음.
 
   ---------------------
+  
+  **RMSE 비교**
+
+  1. 변수만 활용
+
+| LSTM 1layer (22var) | LSTM 1layer (10var) | LSTM 1layer (9var) | 
+| ---------- | :--------- | :----------: |
+| 0.191563825 | 0.170772379 | 0.152846769 |
+
+  2. PCA 활용
 
 | Header One | Header Two | Header Three | Header Four | 
 | ---------- | :--------- | :----------: | ----------: | 
