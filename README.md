@@ -77,16 +77,19 @@ data from yahoo finance.
   
   **RMSE 비교**
 
-  1. 변수만 활용
+  1. 변수만 활용 (모두 1층으로 구성)
 
-| LSTM 1layer (22var) | LSTM 1layer (10var) | LSTM 1layer (9var) | 
+| 22var | 10var | 9var | 
 | ---------- | :--------- | :----------: |
 | 0.191563825 | 0.170772379 | 0.152846769 |
 
   2. PCA 활용
 
-| Header One | Header Two | Header Three | Header Four | 
+| 22var(4PCA) | 10var(4PCA) | 9var(4PCA) | 9var(2PCA) |  
 | ---------- | :--------- | :----------: | ----------: | 
-| Default | Left | Center | Right |
+| 0.153323195 | 0.120311047 | 0.138247439 | 0.135970351 |
+
+-> 이를 통해 PCA가 더 낮은 RMSE를 보이는 것을 알수 있다.
+-> 아직 RMSE가 크므로 줄이는 방향으로 나아가야한다.
 
   -----------------------
