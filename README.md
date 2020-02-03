@@ -31,6 +31,8 @@ data from yahoo finance.
   
   ----------
   
+**LSTM**
+
   
 3. samsung stock price prediction LSTM  
 -> using Bollinger band, moving average, macd, rsi, stochastic, roc, ohlc(22var)  
@@ -89,7 +91,11 @@ data from yahoo finance.
 | ---------- | :---------:| :----------: | ----------: | 
 | 0.153323195 | 0.120311047 | 0.138247439 | 0.135970351 |
 
--> 이를 통해 PCA가 더 낮은 RMSE를 보이는 것을 알수 있다.
+-> 이를 통해 PCA가 더 낮은 RMSE를 보이는 것을 알수 있다.  
 -> 아직 RMSE가 크므로 줄이는 방향으로 나아가야한다.
 
   -----------------------
+
+**facebook prophet**
+
+
