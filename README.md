@@ -98,4 +98,11 @@ data from yahoo finance.
 
 **facebook prophet**
 
+9. samsung stock price prediction prophet   
+
+-> close와 날짜만 활용하여 모델을 만듬  
+-> holiday는 주말과 공휴일로 모두 설정함  
+-> 문제점 : 그래프가 2번씩 중복되어 사용되어짐.  
+-> prophet은 정확한 예측보다는 추세를 확인하는데 좋을 것같음.(주가 자체가 주기가 없어서 규칙성을 보기 힘듬)  
+-> 정확한 알고리즘을 모르다 보니, 파라미터에 의존하면서 모델을 만드는 경향이 큼.
 
