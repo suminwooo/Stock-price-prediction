@@ -5,8 +5,12 @@ I used LSTM, GRU with korea stock, index.
 data from yahoo finance.  
 
 
-00. Technical analysis code(bollinger band, ma, macd, rsi, stochastic)     
-  
+00. Technical analysis code(bollinger band, ma, macd, rsi, stochastic)       
+00. dart 크롤링 
+-> 기본적 분석을 위한 지표를 만들기 위해서 dart에서 api 인증키를 받고 삼성 3년치 재무제표를 크롤링함  
+-> 하나의 보고서는 쉽게 가져올 수 있지만, dart의 단점이 매년 for문으로 뽑아올수 없다는 단점이 있어서 몇 개는 수동으로 뽑아줌.  
+(재무상태표는 동일하나 현금흐름표과 손익계산서의 위치가 다 다르다)  
+-> 이를 활용하여 기본적 분석을  지표를 만들예정
   
   --------
   
