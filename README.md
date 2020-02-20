@@ -14,12 +14,12 @@ data from yahoo finance.
 
   --------
   
-01. Kospi 200 close price prediction using OHLC (LSTM)  
+01. Kospi 200 close price prediction using OHLC (LSTM) ->[코드]()    
 -> using 5day data and prediction 10 days later  
 -> RMSE : 0.02553430596902424  
 -> 문제점 : 기존의 추세를 따라감.   
 
-02. Kospi 200 close price prediction using OHLC (GRU)  
+02. Kospi 200 close price prediction using OHLC (GRU)->[코드]()     
 -> using 5day data and prediction 10 days later  
 -> RMSE : 0.019429207238005057  
 -> 문제점 : 기존의 추세를 따라감.   
@@ -34,25 +34,25 @@ data from yahoo finance.
 **LSTM**
 
   
-03. samsung stock price prediction LSTM  
+03. samsung stock price prediction LSTM->[코드]()  
 -> using Bollinger band, moving average, macd, rsi, stochastic, roc, ohlc(22var)  
 -> using 5day data and prediction 10 days later  
 -> RMSE : 0.19156382527348761  
 -> 문제점 : PCA 검사 결과 차원의 저주 문제 발생.   
   
-04. samsung stock price prediction using PCA, LSTM  
+04. samsung stock price prediction using PCA, LSTM->[코드]()  
 -> using no.3 var  
 -> PCA를 활용하여 4개의 변수를 활용하여 LSTM을 돌려봄  
 -> RMSE : 0.13721298327731987  
 -> 문제점 : 테스트 결과 RMSE가 약간 하락하였지만 큰 의미가 없음.  
 
-05. samsung stock price prediction(10 var) using LSTM  
+05. samsung stock price prediction(10 var) using LSTM->[코드]()  
 -> 3번 모델에서 사용한 변수의 상관계수를 확인한후 var을 축소함. 
 -> PCA를 활용하여 4개의 변수를 활용하여 LSTM을 돌려봄  
 -> RMSE : 0.12660472013769297  
 -> 문제점 : 3번의 모델보다는 향상되었으나 아직 RMSE가 큼.  
 
-06. samsung stock price prediction(9 var) using PCA, LSTM   
+06. samsung stock price prediction(9 var) using PCA, LSTM->[코드]()   
 -> using no.5 var+Close price-2var  
 -> PCA를 활용하여 2-4개의 변수를 활용하여 LSTM을 돌려봄  
 -> RMSE : 0.1691978670334448  
@@ -61,13 +61,13 @@ data from yahoo finance.
 
   ------------------------
 
-07. samsung stock price prediction(9 var) using LSTM  
+07. samsung stock price prediction(9 var) using LSTM->[코드]()  
 -> using no.5 var+Close price-2var  
 -> PCA를 활용하여 4개의 변수를 활용하여 LSTM을 돌려봄  
 -> RMSE : 0.13191855162665575  
 -> 문제점 : 변수의 수를 줄이고 PCA를 활용해 주성분을 2-4개 조절해보았지만 큰 변화는 보이지 않음.
 
-08. samsung stock price prediction(9 var) using LSTM  
+08. samsung stock price prediction(9 var) using LSTM->[코드]()  
 -> using no.5 var+Close price-2var   
 -> 변수의 수를 9개로 줄여서 그대로 돌려봄    
 -> RMSE : 0.21823781565146547  
@@ -98,7 +98,7 @@ data from yahoo finance.
 
 **facebook prophet**
 
-9. samsung stock price prediction prophet   
+9. samsung stock price prediction prophet->[코드]()   
 
 -> close와 날짜만 활용하여 모델을 만듬  
 -> holiday는 주말과 공휴일로 모두 설정함  
@@ -116,17 +116,17 @@ data from yahoo finance.
 -> 많은 논문에서는 단순히 OHLC를 사용하지 않고 새로운 방법으로 변형시키거나 다양한 변수를 포함시켰다.  
 -> 따라서 지금까지는 단순히 OHLC를 활용하여 주가를 예측하였지만, OHLC뿐만 아니라 재무제표를 통해 6개의 새로운 변수를 같이 활용하여 주가예측을 해볼예정.  
 
-    10_1. dart 크롤링  
+    10_1. dart 크롤링->[코드]()  
     -> 기본적 분석을 위한 지표를 만들기 위해서 dart에서 api 인증키를 받고 삼성 3년치 재무제표를 크롤링함  
     -> 하나의 보고서는 쉽게 가져올 수 있지만, dart의 단점이 매년 for문으로 뽑아올수 없다는 단점이 있어서 몇 개는 수동으로 뽑아줌.(재무상태표는 동일하나 현금흐름표과 손익계산서의 위치가 다 다르다)  
     -> 이를 활용하여 기본적 분석을  지표를 만들예정  
 
-    10_2. 재무제표 정리  
+    10_2. 재무제표 정리->[코드]()  
     -> 위에서 크롤링한 재무제표를 기반으로 다양한 변수를 생성.   
     -> 주식의 수를 분기별로 알수 없으므로 분기별로 알 수 있는 정보를 활용함.   
     -> ROE, 유동비율, 부채비율 등 6개 변수를 뽑음.   
     -> 추후 추가 예정   
     
-    10_3. 기술적 지표 설정
+    10_3. 기술적 지표 설정->[코드](https://github.com/suminwooo/Stock-price-prediction/blob/master/10_3.%20%EA%B8%B0%EC%88%A0%EC%A0%81%20%EC%A7%80%ED%91%9C%20%EC%84%A4%EC%A0%95.ipynb)
     -> 지금까지는 재무상태표를 활용한 기본적 분석 지표를 만들었음.
     -> 3번에서는 OHLC와 Volume을 살짝 변형하여 2번의 변수와 같이 사용할 예정
