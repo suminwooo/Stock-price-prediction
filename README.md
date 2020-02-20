@@ -127,6 +127,6 @@ data from yahoo finance.
     -> ROE, 유동비율, 부채비율 등 6개 변수를 뽑음.   
     -> 추후 추가 예정   
     
-    10_3. 기술적 지표 설정->[코드](https://github.com/suminwooo/Stock-price-prediction/blob/master/10_3.%20%EA%B8%B0%EC%88%A0%EC%A0%81%20%EC%A7%80%ED%91%9C%20%EC%84%A4%EC%A0%95.ipynb)
+    10_3. 기술적 지표 설정-> [예측한 주가 추세](https://github.com/suminwooo/project1/blob/master/prophet1%20%EA%B0%9C%EB%B0%9C%ED%9B%84%20%EC%8B%9C%EA%B0%81%ED%99%94.ipynb)  
     -> 지금까지는 재무상태표를 활용한 기본적 분석 지표를 만들었음.
     -> 3번에서는 OHLC와 Volume을 살짝 변형하여 2번의 변수와 같이 사용할 예정
