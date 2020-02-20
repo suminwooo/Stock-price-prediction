@@ -112,7 +112,7 @@ data from yahoo finance.
 10. 재무상태표와 주가를 활용한 주가예측 ->[10_1코드](https://github.com/suminwooo/Stock-price-prediction/blob/master/10_1.%20dart%20%ED%81%AC%EB%A1%A4%EB%A7%81.ipynb), [10_2코드](https://github.com/suminwooo/Stock-price-prediction/blob/master/10_2.%20%EC%9E%AC%EB%AC%B4%EC%A0%9C%ED%91%9C%20%EC%A0%95%EB%A6%AC.ipynb), [10_3코드](https://github.com/suminwooo/Stock-price-prediction/blob/master/10_3.%20%EA%B8%B0%EC%88%A0%EC%A0%81%20%EC%A7%80%ED%91%9C%20%EC%84%A4%EC%A0%95.ipynb), # [코드](),[코드](),[코드]()
   
 -> train set = 2017-01-01 ~ 2019-06-31
--> test set = 2019-07-31 ~ 2020-12-31
+-> test set = 2019-07-01 ~ 2020-12-31
 
 -> 많은 논문에서는 단순히 OHLC를 사용하지 않고 새로운 방법으로 변형시키거나 다양한 변수를 포함시켰다.  
 -> 따라서 지금까지는 단순히 OHLC를 활용하여 주가를 예측하였지만, OHLC뿐만 아니라 재무제표를 통해 6개의 새로운 변수를 같이 활용하여 주가예측을 해볼예정.  
